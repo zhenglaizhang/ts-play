@@ -6,3 +6,7 @@ class Greeter {
 }
 
 Greeter.sayHello("John");
+
+// npm install -D @types/jquery
+// access jquery
+$.ajax

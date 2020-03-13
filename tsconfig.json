@@ -8,5 +8,6 @@
     "watch": true,
     "strictNullChecks": false,
     "experimentalDecorators": true
+    // "types": ["jquery"]
   }
 }
