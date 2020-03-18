@@ -22,3 +22,29 @@ function add(a, b) {
 add(10, null);
 
 const xxx: number = null;
+
+const formatNameAny = (p: any) => `{$p.firstName}`;
+
+function getAny(item: any) {}
+getAny(12);
+getAny("12");
+
+const regex = /test/;
+console.log(regex);
+
+type A = "A";
+type B = "B";
+
+interface Cylinder {
+  radius: number;
+  height: number;
+}
+const Cylinder = (a: number, b: number) => ({ a, b });
+function cal(shpe: unknown) {
+  if (shpe instanceof Cylinder) {
+    return shpe.radius;
+  }
+}
+
+type T2 = typeof Cylinder;
+const t2 = typeof Cylinder;
